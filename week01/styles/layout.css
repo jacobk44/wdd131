@@ -5,7 +5,7 @@
 
 body{
     display: grid;
-    height: 100vh;
+    height: 100vw;
     grid-template:auto 1 auto /300px 1fr auto ;
     font-family: sans-serif;
 }
