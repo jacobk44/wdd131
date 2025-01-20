@@ -6,8 +6,8 @@
 
 body {
     display: grid;
-    height: 100vh;
-    grid-template:auto 1 auto /300px 1fr auto ;
+    /* height: 100vh; */
+    grid-template:auto 1 auto /auto 1fr auto ;
 }
 
 header{
