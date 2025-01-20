@@ -7,7 +7,7 @@
 body {
     display: grid;
     /* height: 100vh; */
-    grid-template:auto 1fr auto;
+    grid-template:auto 1fr auto
 }
 
 header{
@@ -136,4 +136,9 @@ footer {
     padding:2rem;
     grid-column:1/4;
     background-color: rgb(252, 196, 196);
+}
+
+footer p {
+    margin: 0.5rem;
+    text-align: center;
 }
