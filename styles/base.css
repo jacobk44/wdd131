@@ -6,7 +6,6 @@
 
 body {
     display: grid;
-    height: 100vh;
     grid-template:auto 1fr auto;
     font-family: serif;
     font-weight: 400;
