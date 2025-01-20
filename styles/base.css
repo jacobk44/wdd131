@@ -22,7 +22,6 @@ h1{
     background-color: blue;
     padding: 0.5rem;
     color: #fff;
-    font-weight: 100;
 }
 
 nav {
@@ -118,7 +117,7 @@ main {
     flex:1;
     text-align:center;
     padding: 5rem;
-    margin:2rem 5rem 2rem 2rem;
+    margin:5rem;
 }
 
 .card h2{
