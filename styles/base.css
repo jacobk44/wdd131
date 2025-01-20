@@ -8,7 +8,6 @@ body {
     display: grid;
     grid-template:auto 1fr auto;
     font-family: serif;
-    font-weight: 400;
 
 }
 
