@@ -96,8 +96,8 @@ main {
 .about{
     display:flex;
     text-align: center;
-    /* gap:10px; */
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
@@ -112,7 +112,8 @@ main {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* gap:5px; */
+    justify-content: space-around;
+
 
 }
 
