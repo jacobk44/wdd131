@@ -96,7 +96,8 @@ main {
 .about{
     display:flex;
     text-align: center;
-
+    /* gap:10px; */
+    flex-wrap: wrap;
 }
 
 
@@ -110,7 +111,8 @@ main {
 .accra {
     display: flex;
     align-items: center;
-
+    flex-wrap: wrap;
+    /* gap:5px; */
 
 }
 
