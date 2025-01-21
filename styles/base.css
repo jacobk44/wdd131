@@ -111,7 +111,7 @@ main {
     display: flex;
     align-items: center;
 
-    
+
 }
 
 .accra p{
@@ -119,6 +119,7 @@ main {
     text-align:center;
     padding:1rem  10rem 1rem 1rem;
     margin:5rem;
+    flex-wrap: wrap;
 }
 
 .card h2{
