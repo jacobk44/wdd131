@@ -123,7 +123,7 @@ main {
 
 /* Caption Styling */
 .temple-container figcaption {
-    font-size: smaller;
+    font-size: 1rem;
     color: #444;
     font-weight: bold;
     padding: 5px 0;
