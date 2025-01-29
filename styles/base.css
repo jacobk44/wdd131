@@ -5,8 +5,7 @@
 }
 
 body {
-    display: grid;
-    grid-template:auto 1fr auto/ auto 1fr auto;
+    display:grid;
     font-family: "Roboto" serif;
     font-weight: 400;
 }
