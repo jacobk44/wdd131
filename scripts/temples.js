@@ -9,8 +9,6 @@
 
 
 
-// Footer year and last modified
-
 const footerElement = document.getElementById("year");
 
 const recentYear = new Date().getFullYear();
@@ -20,7 +18,7 @@ footerElement.innerHTML = `<span>© ${recentYear},❤  Jacob Amoah  ❤  Greater
 
 
 
-  // Function to populate the last modified date
+
   function setLastModified() {
     const modifiedDate = document.lastModified;
     document.querySelector("#lastModified").textContent = `Last Modified: ${modifiedDate}`;

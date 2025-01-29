@@ -1,4 +1,4 @@
-/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +9,10 @@ body {
     font-family: "Sansita", sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full height viewport */
+    min-height: 100vh; 
 }
 
-/* Header Styling */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,6 @@ h2{
 }
 
 
-/* Hamburger Menu Button */
 #menu {
     text-decoration: none;
     display: block;
@@ -40,17 +39,17 @@ h2{
     
 }
 
-/* Hamburger Icon */
+
 #menu::before {
     content: "\2261" ; 
     text-align: center;
 
 }
 
-/* Navigation Menu - Hidden Initially */
+
 .navigation {
     list-style: none;
-    display: none; /* Hidden on mobile */
+    display: none; 
     flex-direction: column;
     width: 100%;
     background: rgba(160, 133, 211, 0.95);
@@ -80,18 +79,18 @@ h2{
     text-decoration: underline;
 }
 
-/* Show the menu when toggled */
+
 .show {
     display: flex;
     flex-direction: column;
 }
 
-/* Change icon when active */
+
 #menu.show::before {
     content: "X";
 }
 
-/* Main Content */
+
 main {
     flex: 1;
     display: flex;
@@ -100,7 +99,7 @@ main {
     padding: 2rem;
 }
 
-/* Temple Image Grid */
+
 .temple-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -110,15 +109,16 @@ main {
     margin: auto;
 }
 
-/* Style for each figure */
+
 .temple-container figure {
-    background-color: #fff; /* White background */
+    background-color: #fff; 
     padding: 10px;
     text-align: center;
     border-radius: 10px;
 }
 
-/* Image Styling */
+
+
 .temple-container img {
     width: 100%;
     height: auto;
@@ -126,7 +126,7 @@ main {
     border-radius: 5px;
 }
 
-/* Caption Styling */
+
 .temple-container figcaption {
     font-size: 1rem;
     color: #444;
@@ -134,13 +134,13 @@ main {
     padding: 5px 0;
 }
 
-/* Hover Effect */
+
 .temple-container figure:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -148,7 +148,7 @@ footer {
     color: black;
 }
 
-/* Mobile View - Stack images in one column */
+
 @media (max-width: 600px) {
     .temple-container {
         grid-template-columns: 1fr;
