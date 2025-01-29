@@ -1,0 +1,84 @@
+
+/* Global Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* Header Styling */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 2rem;
+	background-color: rgba(160, 133, 211, 0.945);
+	border-bottom: 1px solid #faeded;
+	position: relative;
+}
+
+/* Hamburger Menu Button */
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+	cursor: pointer;
+	border: none;
+}
+
+/* Hamburger Icon */
+#menu::before {
+	content: "\2261";
+}
+
+/* Navigation Menu - Hidden Initially */
+.navigation {
+	list-style: none;
+	display: none; /* Hidden on mobile */
+	flex-direction: column;
+	width: 100%;
+	background: rgba(160, 133, 211, 0.95);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+}
+
+.navigation li {
+	display: block;
+}
+
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 1rem;
+	text-decoration: none;
+	text-align: center;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+.navigation a:hover {
+	background-color: yellow;
+	color: black;
+	text-decoration: underline;
+}
+
+/* Show the menu when toggled */
+.show {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Change icon when active */
+#menu.show::before {
+	content: "X";
+}

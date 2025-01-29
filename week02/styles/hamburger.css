@@ -39,7 +39,7 @@ nav {
 }
 
 #menu.open::before {
-	content: "\2761";
+	content: "\2716";
 }
 
 .navigation {
