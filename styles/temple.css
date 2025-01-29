@@ -1,84 +1,151 @@
-
 /* Global Reset */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: "Sansita", sans-serif;
+    font-family: "Sansita", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height viewport */
 }
 
 /* Header Styling */
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1.5rem 2rem;
-	background-color: rgba(160, 133, 211, 0.945);
-	border-bottom: 1px solid #faeded;
-	position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: rgba(160, 133, 211, 0.945);
+    border-bottom: 1px solid #faeded;
+    position: relative;
 }
-
+h2{
+	text-align: center;
+}
 /* Hamburger Menu Button */
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight: 700;
-	padding: 0.5rem 0.75rem;
-	background-color: #eee;
-	color: #000;
-	cursor: pointer;
-	border: none;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    cursor: pointer;
+    border: none;
 }
 
 /* Hamburger Icon */
 #menu::before {
-	content: "\2261";
+    content: "\2261"; /* Unicode for menu icon */
 }
 
 /* Navigation Menu - Hidden Initially */
 .navigation {
-	list-style: none;
-	display: none; /* Hidden on mobile */
-	flex-direction: column;
-	width: 100%;
-	background: rgba(160, 133, 211, 0.95);
-	position: absolute;
-	top: 100%;
-	left: 0;
-	z-index: 1000;
+    list-style: none;
+    display: none; /* Hidden on mobile */
+    flex-direction: column;
+    width: 100%;
+    background: rgba(160, 133, 211, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
 }
 
 .navigation li {
-	display: block;
+    display: block;
 }
 
 .navigation a {
-	display: block;
-	color: #eee;
-	padding: 1rem;
-	text-decoration: none;
-	text-align: center;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
-	font-weight: 700;
-	transition: 0.5s;
+    display: block;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-weight: 700;
+    transition: 0.5s;
 }
 
 .navigation a:hover {
-	background-color: yellow;
-	color: black;
-	text-decoration: underline;
+    background-color: rgb(231, 231, 101);
+    text-decoration: underline;
 }
 
 /* Show the menu when toggled */
 .show {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Change icon when active */
 #menu.show::before {
-	content: "X";
+    content: "X";
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Temple Image Grid */
+.temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Style for each figure */
+.temple-container figure {
+    background-color: #fff; /* White background */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Image Styling */
+.temple-container img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Caption Styling */
+.temple-container figcaption {
+    font-size: smaller;
+    color: #444;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* Hover Effect */
+.temple-container figure:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(160, 133, 211, 0.945);
+    color: black;
+}
+
+/* Mobile View - Stack images in one column */
+@media (max-width: 600px) {
+    .temple-container {
+        grid-template-columns: 1fr;
+    }
 }
