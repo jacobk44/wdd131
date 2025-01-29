@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0.5rem;
     background-color: rgba(160, 133, 211, 0.945);
     border-bottom: 1px solid #faeded;
     position: relative;
@@ -27,6 +27,7 @@ h2{
 }
 /* Hamburger Menu Button */
 #menu {
+    text-decoration: none;
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -35,11 +36,14 @@ h2{
     color: #000;
     cursor: pointer;
     border: none;
+    
 }
 
 /* Hamburger Icon */
 #menu::before {
-    content: "\2261"; /* Unicode for menu icon */
+    content: "\2261" ; 
+    text-align: center;
+
 }
 
 /* Navigation Menu - Hidden Initially */
