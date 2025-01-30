@@ -58,7 +58,7 @@ h2{
 
 #menu::before {
     content: "\2261" ; 
-    text-align: center;
+    text-align: right;
 
 }
 
