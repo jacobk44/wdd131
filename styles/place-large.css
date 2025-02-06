@@ -1,0 +1,99 @@
+@media (min-width: 40em) {
+    body {
+        font-family: sans-serif;
+        min-height: 100vh;
+        /* min-width: 100vw; */
+        align-items: center;
+
+    }
+
+
+
+    header {
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+
+    .content {
+        position: relative;
+        max-width: 1500px;
+    }
+
+
+    .picture img {
+        width: 100%;
+        display: block;
+    }
+
+
+
+    .box {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+
+    }
+
+
+    .data-box {
+        top: 30px;
+        left: 30px;
+    }
+
+
+    .weather-box {
+        top: 10em;
+        right: 30px;
+    }
+
+
+
+    .box h2 {
+        background-color: darkgreen;
+        color: white;
+        padding: 0.5rem 10rem 0.5rem 0;
+        font-size: 1.5rem;
+    }
+
+    .data p{
+        padding-left: 3rem;
+        line-height: 1.5rem;
+    }
+    .weather p {
+        padding-left: 3rem;
+        line-height: 1.5rem;
+    }
+
+
+    .weather-icon-large {
+        display: inline;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+
+    .weather-icon-mobile {
+        display: none;
+    } 
+
+    
+
+    footer {
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+}

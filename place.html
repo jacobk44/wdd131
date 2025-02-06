@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jacob Amoah">
+    <script src="scripts/place.js" async defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+    <main>
+        <div class="content">
+            <div class="picture">
+                <picture>
+                    <source srcset="images/place-large-img.webp" media="(min-width: 1000px)">
+                    <source srcset="images/place-medium-img.webp" media="(min-width: 500px)">
+                    <img src="images/place-small-img.webp" alt="Place responsive image">
+                </picture>
+            </div>
+            <section>
+                <div class="box data-box">
+                    <h2>Data</h2>
+                    <div class="data">
+                        <p>Area: 238,533 sq km</p>
+                        <p>Population: 35,000,000</p>
+                        <p>Capital: Accra</p>
+                        <p>Language: Twi, English</p>
+                        <p>Currency: Cedis</p>
+                        <p>Time Zone: GMT</p>
+                        <p>Calling Code: +233</p>
+                        <p>Internet TLD: .gh</p>
+                    </div>
+                </div>
+                <div class="box weather-box">
+                    <h2>
+                        Weather <span class="weather-icon-large">⛅</span>
+                        <img src="images/weather-icon.svg" class="weather-icon-mobile" alt="Weather icon">
+                    </h2>                    
+                    <div class="weather">
+                        <p>Temperature: 10°C</p>
+                        <p>Condition: Partly Cloudy</p>
+                        <p>Wind: 5 km/h</p>
+                        <p>WindChill: <span id="wind-chill"> N/A</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
