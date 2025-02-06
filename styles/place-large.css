@@ -24,7 +24,17 @@
         font-size: 1.5rem;
     }
 
+    .weather-box h2::after {
+        content: "⛅"; 
+        font-size: 1.5rem;
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
 
+    .weather-icon-mobile {
+        display: none;
+    } 
 
     .content {
         position: relative;
