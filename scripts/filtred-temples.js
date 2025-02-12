@@ -118,13 +118,13 @@ const temples = [
             location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
             dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
             area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
-            img.setAttribute("src", temple.imageUrl);  // Fix the image reference
+            img.setAttribute("src", temple.imageUrl);
             img.setAttribute("alt", `${temple.templeName} temple`);
             img.setAttribute("loading", "lazy");
 
             card.appendChild(name);
             card.appendChild(location);
-            card.appendChild(dedication);  // Fix variable name
+            card.appendChild(dedication); 
             card.appendChild(area);
             card.appendChild(img);
 
