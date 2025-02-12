@@ -43,6 +43,7 @@ h2{
 
 
 #menu {
+    margin-left: auto;
     text-decoration: none;
     display: block;
     font-size: 2rem;

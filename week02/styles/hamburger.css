@@ -25,6 +25,7 @@ nav {
 
 /* small view navigation */
 #menu {
+	margin-left: auto;
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
