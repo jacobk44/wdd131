@@ -31,14 +31,30 @@ h1, h2 {
     
 }
 
+footer {
+    background-color: #000060;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
 
 
 ul {
     list-style: disc;
     margin-left: 20px;
 }
+img {
+    max-width: 80%;
+    margin: 2rem;
+    padding: 2rem;;
+}
 
 
+figcaption {
+    text-align: center;
+}
 
 img {
     max-width: 100%;
