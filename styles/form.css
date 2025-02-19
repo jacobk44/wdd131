@@ -1,0 +1,154 @@
+
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+
+header {
+    padding: .5rem 2%;
+    background-color: #63285e;
+    color:#fff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
+.pf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+
+
+.pf1 label {
+    display:block;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: .9rem;
+}
+
+
+.pf1 input[type="text"],
+.pf1 input[type="tel"],
+.pf1 input[type="date"],
+.pf1 input[type="email"],
+.pf1 select,
+.pf1 input[type="url"],
+.pf1 input[type="number"]{
+    background-color: #eee;
+    display:block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+
+.pf1 input[type="radio"],
+.pf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+
+.pf1 input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#d8c7c3, #968a87);
+    color: #000000;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width:400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    
+}
+
+
+.option{
+   font-size: 12px;
+   color: rgb(127, 82, 211);   
+
+}
+
+.star-rating{
+    display: flex;
+    justify-content: start;
+    gap:15px;
+}
+
+.star-rating input[type="radio"]{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+
+.star-rating input[type="radio"]:checked{
+    background-color: gold;
+    border-color: gold;
+}
+
+
+.star-rating label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+.star-rating{
+    font-size: 18px;
+    color:gold;
+}
+
+
+
+
+.check {
+    font-style: italic;
+}
+
+
+
+footer {
+    background-color: #63285e;
+    padding: .5rem 2%;
+    text-align: center;
+    color:#fff;
+}
+
