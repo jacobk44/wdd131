@@ -126,7 +126,7 @@ main {
 
 .star-rating input[type="radio"]:checked{
     background-color: gold;
-    border-color: gold;
+    
 }
 
 
