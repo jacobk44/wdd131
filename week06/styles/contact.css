@@ -33,9 +33,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0.5rem;
-    background-color: rgba(160, 133, 211, 0.945);
+    background-color: #000060;
     border-bottom: 1px solid #faeded;
     position: relative;
+    color:#ffffff;
 }
 h2{
 	text-align: center;
@@ -68,7 +69,7 @@ h2{
     display: none; 
     flex-direction: column;
     width: 100%;
-    background: rgba(160, 133, 211, 0.95);
+    background: #000060;
     position: absolute;
     top: 100%;
     left: 30%;
@@ -81,7 +82,7 @@ h2{
 
 .navigation a {
     display: block;
-    color: black;
+    color:#ffffff;
     padding: 1rem;
     text-decoration: none;
     text-align: center;
@@ -206,8 +207,8 @@ h2{
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: rgba(160, 133, 211, 0.945);
-    color: black;
+    background-color: #000060;
+    color: #ffffff;
 }
 
 
