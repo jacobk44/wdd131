@@ -1,0 +1,227 @@
+:root {
+    --primary-color: rgba(160, 133, 211, 0.945);
+    --secondary-color: #eee;
+    --hover-color: rgb(231, 231, 101);
+    --text-color: black;
+    --font-size-main: 1rem;
+    --font-size-heading: 2rem;
+    --font-size-nav: clamp(1rem, 2vmin, 1.5rem);
+    --padding-main: 2rem;
+    --gap: 10px;
+    --border-radius: 10px;
+    --header-padding: 1.5rem 0.5rem;
+    --footer-padding: 1rem;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0.5rem;
+    background-color: #000060;
+    color:#ffffff;
+    border-bottom: 1px solid #faeded;
+    position: relative;
+}
+h2{
+	text-align: center;
+}
+
+
+#menu {
+    margin-left: auto;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+#menu::before {
+    content: "\2261" ; 
+
+}
+
+
+.navigation {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    background: #000060;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    z-index: 1000;
+}
+
+.navigation li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    color:#ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    background-color: rgb(231, 231, 101);
+    text-decoration: underline;
+}
+
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#menu.show::before {
+    content: "X";
+}
+
+.pf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+
+
+.pf1 label {
+    display:block;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: .9rem;
+}
+
+
+.pf1 input[type="text"],
+.pf1 input[type="tel"],
+.pf1 input[type="date"],
+.pf1 input[type="email"],
+.pf1 select,
+.pf1 input[type="url"],
+.pf1 input[type="number"]{
+    background-color: #eee;
+    display:block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+
+.pf1 input[type="radio"],
+.pf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+
+.pf1 input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#d8c7c3, #968a87);
+    color: #000000;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width:400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    
+}
+
+.pf1 input[type="submit"]{
+    font-size: 1rem;
+}
+
+.option{
+   font-size: 12px;
+   color: rgb(127, 82, 211);   
+
+}
+
+.star-rating{
+    display: flex;
+    justify-content: start;
+    gap:15px;
+}
+
+.star-rating input[type="radio"]{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+
+.star-rating input[type="radio"]:checked{
+    background-color: gold;
+    
+}
+
+
+.star-rating label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+.star-rating{
+    font-size: 18px;
+    color:gold;
+}
+
+
+
+
+.check {
+    font-style: italic;
+}
+
+section {
+    color:#333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000060;
+    color:#ffffff;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description"
+        content="Learn how to create responsive hamburger menus and showcase temple pictures effectively with WDD 131 design techniques, led by Jacob Amoah.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jacob Amoah">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+
+    <script src="scripts/contact.js" async defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Elite Home Shime</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="home">Home</a></li>
+                <li><a href="#" title="about us">About Us</a></li>
+                <li><a href="#" title="service">Service</a></li>
+                <li><a href="#" title="product review">Product Review</a></li>
+                <li><a href="#" title="gallery">Gallery</a></li>
+                <li><a href="#" title="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <h2>Contact Elite Home Shine Professional Cleaning </h2>
+        </div>
+       </section>
+       <section class="contact-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Give us a call , or email us. We're always happy to help</p>
+            <ul>
+                <li>📞(304) 201-6112</li>
+                <li>📞(403) 395-7548</li>
+                <li>📧<a href="mailto:lordelton14@gmail.com">lordelton14@gmail.com</a></li>
+                <li>🧭Mon-Fri: 8:30 AM - 5: 00 PM</li>
+                <li>💼<a href="#">Employment Opportunities</a></li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <form method="get" action="thanks.html" class="wf1">
+                <fieldset>
+                    <legend>Application Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="Sname" required></label>
+                    <label>Phone Number*<input type="tel" name="phone" placeholder="123456789" required> </label>
+                    <label>Email*<input type="email" name="email" placeholder="someone@gmail.com"required></label>
+                    <label for="feedback">Written Review<span class="option">(Optional)</span></label>
+                    <textarea id="written-review" name="written-review" rows="4" cols="50" required></textarea>    
+                </fieldset>
+                <input type="submit" value="Send Message">
+            </form>
+
+        </div>
+       </section>
+    </main>
+
+    <footer>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
