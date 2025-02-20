@@ -128,9 +128,7 @@ h2{
 .pf1 input[type="tel"],
 .pf1 input[type="date"],
 .pf1 input[type="email"],
-.pf1 select,
-.pf1 input[type="url"],
-.pf1 input[type="number"]{
+.pf1 select{
     background-color: #eee;
     display:block;
     border: 1px solid #999;
@@ -224,4 +222,11 @@ footer {
     padding: 1rem;
     background-color: #000060;
     color:#ffffff;
+}
+
+footer img{
+    width:20px;
+    height: 20px;
+    margin:10px;
+
 }
