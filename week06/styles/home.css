@@ -190,6 +190,10 @@ main {
 }
 
 
+ul{
+    list-style: none;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -202,6 +206,7 @@ main {
 .hero-text{
     max-width: 50%;
     line-height: 2rem;
+    text-align: left;
 }
 
 .hero-image {
@@ -212,6 +217,12 @@ main {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
+}
+
+
+.service-list {
+    text-align: left;
+
 }
 
 
@@ -232,7 +243,6 @@ main {
     flex: 1;
     min-width: 250px;
     padding: 30px;
-    /* background-color: white; */
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);

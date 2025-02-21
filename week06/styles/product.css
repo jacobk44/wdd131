@@ -209,17 +209,16 @@ h2{
 
 
 .product{
-    padding: 5rem;
-    background-color: rgb(114, 101, 231);
+    padding: 8rem;
+    background-color: #0000b5;
     color: #ffff;
+    font-weight: 900;
 
 }
 
 
-.Product h1{
+h2{
     text-align: center;
-    padding:2rem;
-    font-size: 2rem;
 }
 
 
