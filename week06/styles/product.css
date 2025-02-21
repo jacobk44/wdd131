@@ -127,7 +127,6 @@ h2{
 .pf1 input[type="text"],
 .pf1 input[type="tel"],
 .pf1 input[type="date"],
-.pf1 input[type="email"],
 .pf1 select{
     background-color: #eee;
     display:block;
@@ -167,7 +166,7 @@ h2{
 
 .option{
    font-size: 12px;
-   color: rgb(127, 82, 211);   
+   color: #00005b;   
 
 }
 

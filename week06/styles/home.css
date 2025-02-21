@@ -127,8 +127,8 @@ footer img{
 
 .btn{
     display: inline-block;
-    background-color: #007bff;
-    color:white;
+    background-color: #00005b;
+    color:#ffff;
     padding: 10px 20px;
     font-size: 16px;
     text-decoration: none;
@@ -167,9 +167,8 @@ footer img{
 .learn-more {
     font-size: 16px;
     text-decoration: none;
-    color: #007bff;
-    background-color: #007bff;
-    color:white;
+    background-color: #00005b;
+    color:#ffff;
     padding: 10px 20px;
     font-size: 16px;
     text-decoration: none;
@@ -182,6 +181,11 @@ footer img{
 
 }
 
+.learn-more:hover{
+    background-color: #0056b3;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -193,6 +197,7 @@ main {
 ul{
     list-style: none;
 }
+
 
 .hero {
     display: flex;
@@ -247,6 +252,7 @@ ul{
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    line-height: 2rem;
 }
 
 
@@ -258,7 +264,7 @@ ul{
 .booking-steps{
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+
 }
 
 .h3-steps {
@@ -276,18 +282,20 @@ ul{
 
 .step-box {
     flex: 1 1 calc(33.333% - 20px);
-    background-color: white;
     padding:25px;
     box-shadow: 0px 4px 8px rgb(0,0,0,0.1);
     text-align: center;
     min-width: 250px;
+    line-height: 2rem;
+    
 }
 
 
 .step-link {
-    color: #007bff;
+    color: #00005b;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 .hero2 {
@@ -364,7 +372,8 @@ section {
 }
 
 .gallery-btn:hover {
-    background-color: #2a1a5a;
+    background-color: #00005b;
+    color: #ffff;
 }
 
 .gallery {
