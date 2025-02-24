@@ -25,8 +25,9 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
+
 
 
 header {
@@ -34,13 +35,14 @@ header {
     justify-content: space-between;
     padding: 1.5rem 0.5rem;
     background-color: #000060;
-    color:#ffffff;
+    color: #ffffff;
     border-bottom: 1px solid #faeded;
     position: relative;
     max-width: 100%;
 }
-h2{
-	text-align: center;
+
+h2 {
+    text-align: center;
 }
 
 
@@ -55,19 +57,19 @@ h2{
     color: #000;
     cursor: pointer;
     border: none;
-    
+
 }
 
 
 #menu::before {
-    content: "\2261" ; 
+    content: "\2261";
 
 }
 
 
 .navigation {
     list-style: none;
-    display: none; 
+    display: none;
     flex-direction: column;
     width: 100%;
     background: #000060;
@@ -83,7 +85,7 @@ h2{
 
 .navigation a {
     display: block;
-    color:#ffffff;
+    color: #ffffff;
     padding: 1rem;
     text-decoration: none;
     text-align: center;
@@ -114,29 +116,53 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #000060;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 
 
-footer img{
-    width:20px;
+footer img {
+    width: 20px;
     height: 20px;
-    margin:10px;
+    margin: 10px;
 
 
 }
 
-.list,.item::before{
-    content:"✔ ";
+.list,
+.item::before {
+    content: "✔ ";
+
+}
+
+.btn-book {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+
+
+}
+
+.btn-book:hover {
+    background-color: #0056b3;
+    color: #ffffff;
 
 }
 
 
-.btn{
+
+.btn {
     display: inline-block;
     background-color: #00005b;
-    color:#ffff;
+    color: #ffff;
     padding: 10px 20px;
     font-size: 16px;
     text-decoration: none;
@@ -160,7 +186,7 @@ footer img{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-top:1rem;
+    padding-top: 1rem;
 }
 
 
@@ -175,7 +201,7 @@ footer img{
     font-size: 16px;
     text-decoration: none;
     background-color: #00005b;
-    color:#ffff;
+    color: #ffff;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -186,7 +212,7 @@ footer img{
 
 }
 
-.learn-more:hover{
+.learn-more:hover {
     background-color: #0056b3;
 }
 
@@ -199,7 +225,7 @@ main {
 }
 
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -213,7 +239,7 @@ ul{
     max-width: 100%;
 }
 
-.hero-text{
+.hero-text {
     max-width: 50%;
     line-height: 2rem;
     text-align: left;
@@ -260,27 +286,27 @@ ul{
 }
 
 
-.feature-item::before{
+.feature-item::before {
     content: "✔ ";
 
 }
 
 
-.feature-item2::before{
+.feature-item2::before {
     content: "🧹 ";
 
 }
 
 
 
-.feature-item3::before{
+.feature-item3::before {
     content: "🌻 ";
 
 }
 
 
 
-.booking-steps{
+.booking-steps {
     text-align: center;
     padding: 50px 20px;
 
@@ -293,20 +319,20 @@ ul{
 
 
 .steps-container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .step-box {
     flex: 1 1 calc(33.333% - 20px);
-    padding:25px;
-    box-shadow: 0px 4px 8px rgb(0,0,0,0.1);
+    padding: 25px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
     text-align: center;
     min-width: 250px;
     line-height: 2rem;
-    
+
 }
 
 
@@ -327,10 +353,11 @@ ul{
 }
 
 
-.hero-text2{
-    max-width:50%;
+.hero-text2 {
+    max-width: 50%;
     line-height: 2rem;
 }
+
 .hero-image2 {
     max-width: 100%;
 }
@@ -358,7 +385,7 @@ ul{
     justify-content: center;
 }
 
-h4{
+h4 {
     font-size: 32px;
     font-weight: bold;
     color: #333;
@@ -366,9 +393,9 @@ h4{
     padding: 2rem;
 }
 
-.text-content p{
+.text-content p {
     font-size: 18px;
-    color:#333;
+    color: #333;
     max-width: 600px;
     margin: 0 auto 20px;
 }
@@ -386,7 +413,7 @@ section {
     font-weight: bold;
     transition: 0.3s;
     border-radius: 6px;
-    
+
 }
 
 .gallery-btn:hover {
@@ -409,13 +436,19 @@ section {
     border-radius: 8px;
     object-fit: cover;
     height: 180px;
-    transition: transform 0,3s ease-in-out;
+    transition: transform 0, 3s ease-in-out;
 }
+
+
 
 
 @media (max-width: 768px) {
 
-    header{
+    .btn-book {
+        display: none;
+    }
+
+    header {
         max-width: 100%;
     }
 
@@ -423,7 +456,7 @@ section {
     .hero {
         flex-direction: column;
         text-align: center;
-        
+
     }
 
     .hero-text,
@@ -441,7 +474,7 @@ section {
         max-width: 300px;
     }
 
-    .steps-container{
+    .steps-container {
         flex-direction: column;
         align-items: center;
 
@@ -452,12 +485,12 @@ section {
     }
 
     .hero2 {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
         text-align: center;
         padding: 20px;
     }
 
-    .hero-text2, 
+    .hero-text2,
     .hero-image2 {
         max-width: 100%;
     }
@@ -465,21 +498,27 @@ section {
 
     .gallery {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
     }
 
-    .gallery img{
+    .gallery img {
         width: 90%;
     }
 
     .buttons {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         margin: 1rem;
     }
 
     .buttons a {
-        margin-right: 0; 
+        margin-right: 0;
         width: 100%;
-        max-width: 250px; }
+        max-width: 250px;
+    }
+
+
+
+
+
 }
