@@ -117,6 +117,28 @@ h2{
 }
 
 
+.list,.item::before{
+    content: "📞";
+}
+
+
+
+.list,.item2::before{
+    content: "📧";
+}
+
+
+.list,.item3::before{
+    content: "🧭";
+}
+
+
+
+.list,.item4::before{
+    content: "💼";
+}
+
+
 .contact h1{
     text-align: center;
     padding:2rem;
